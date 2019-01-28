@@ -1,8 +1,14 @@
 # Introduction to Relational Data and SQL
 
-We're going to model the following problem:
+* where do databases fit in the stack?
+* serializing to JSON is a type of database
+* relational data vs non-relational data
+* SQL and declarative programming langauges
+  * program the what, not the how
 
-Implementing a simple quiz system which contains questions and user's submissions to each question. A quiz can have many multi-choice questions and users can skip answering certain questions.
+# Example Problem
+
+Let's implement a simple quiz system which contains questions and user's submissions to each question. A quiz can have many multi-choice questions and users can skip answering certain questions.
 
 * **Tables / Entities**: Survey, Questions, Options, Submission, Answers
 * Survey has many questions
@@ -13,9 +19,12 @@ Implementing a simple quiz system which contains questions and user's submission
 
 Considerations
 
+* take some time to get it right
+* use a tool like [draw.io](https://draw.io) for your ER diagram
 * parent-child relationship and where foreign keys go
 * first class foreign keys (and `null`)
-* storing/caching results that can be dynamically retrieved; normalization
+* storing/caching results that can be dynamically retrieved
+* database normalization
 * what if the question text changes? What if the correct answer changes?
 * dotted lines between entities that have (indirect) many-many relationships doing to intermediary / join tables
   * same as two one-to-many relationships!
