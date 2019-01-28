@@ -86,8 +86,11 @@ Follow along with https://github.com/jugonzal/lhl-lectures/blob/master/w4d1-sql-
   * write raw SQL queries, get one row back at a time, unpack column values yourself
   * all SQL features available to you
 * query builder: [knex](https://knexjs.org/)
- * 
+  * raw SQL queries or a fluent approach to building queries
 * ORM: [sequelize](http://docs.sequelizejs.com/)
+  * js objects that synchronize automatically* with your database
+  * quick to get set up
+  * can sometimes work against you later on
 
 # Further reading
 * SQL Injection: https://medium.com/intrinsic/common-node-js-attack-vectors-sql-injection-b8b65ca78b68
