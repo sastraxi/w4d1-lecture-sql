@@ -77,11 +77,19 @@ Follow along with https://github.com/jugonzal/lhl-lectures/blob/master/w4d1-sql-
   * `left` vs `right`?
 
 # Aside: the database index
-
 * when we ask for a subset of rows from a table, how can we get these efficiently?
 * postgres automatically creates indices for primary keys (but not foreign keys)
 * examine your `where` clauses and the `on` clause for the "keys" you're using to select rows from tables
 
+# Access your data from node.js
+* raw access: [pg](https://www.npmjs.com/package/pg)
+  * write raw SQL queries, get one row back at a time, unpack column values yourself
+  * all SQL features available to you
+* query builder: [knex](https://knexjs.org/)
+ * 
+* ORM: [sequelize](http://docs.sequelizejs.com/)
+
 # Further reading
-* https://devcenter.heroku.com/articles/postgresql-indexes
-* https://github.com/jensen/sqlintro-notes/
+* SQL Injection: https://medium.com/intrinsic/common-node-js-attack-vectors-sql-injection-b8b65ca78b68
+* More on Indexes: https://devcenter.heroku.com/articles/postgresql-indexes
+* Another W4D1 lecture: https://github.com/jensen/sqlintro-notes/
