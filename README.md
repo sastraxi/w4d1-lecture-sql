@@ -49,7 +49,7 @@ Follow along with https://github.com/jugonzal/lhl-lectures/blob/master/w4d1-sql-
 * `psql -h localhost -p 5432 -U postgres -d w4d1`
   * HeidiSQL and other GUIs
 
-## queries.sql
+## [queries.sql](https://raw.githubusercontent.com/jugonzal/lhl-lectures/master/w4d1-sql-intro/queries.sql)
 
 * all tracks, with artist name and album name
   * same as above (`where` instead of `join`)
@@ -64,3 +64,7 @@ Follow along with https://github.com/jugonzal/lhl-lectures/blob/master/w4d1-sql-
 * total plays of tracks on an album
   * using `left outer join` to correct the error
   * `left` vs `right`?
+
+## Further reading
+
+* https://github.com/jensen/sqlintro-notes/
