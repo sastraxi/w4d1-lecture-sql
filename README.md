@@ -76,6 +76,12 @@ Follow along with https://github.com/jugonzal/lhl-lectures/blob/master/w4d1-sql-
   * using `left outer join` to correct the error
   * `left` vs `right`?
 
-## Further reading
+# Aside: the database index
 
+* when we ask for a subset of rows from a table, how can we get these efficiently?
+* postgres automatically creates indices for primary keys (but not foreign keys)
+* examine your `where` clauses and the `on` clause for the "keys" you're using to select rows from tables
+
+# Further reading
+* https://devcenter.heroku.com/articles/postgresql-indexes
 * https://github.com/jensen/sqlintro-notes/
