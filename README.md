@@ -17,14 +17,16 @@ Let's implement a simple quiz system which contains questions and user's submiss
 * A submission has a user key (github username or something, no model)
 * A submission has many answers
 
-Considerations
+## Schema Design Considerations
 
 * take some time to get it right
 * use a tool like [draw.io](https://draw.io) for your ER diagram
-* parent-child relationship and where foreign keys go
-* first class foreign keys (and `null`)
-* storing/caching results that can be dynamically retrieved
+* parent-child relationship and where foreign keys go (on the many side!)
+* first class foreign key constraints (and `null`ability)
 * database normalization
+* consistency in naming
+  * singular table names in `snake_case`
+  * foreign keys named e.g. `table_name_id`
 * what if the question text changes? What if the correct answer changes?
 * dotted lines between entities that have (indirect) many-many relationships doing to intermediary / join tables
   * same as two one-to-many relationships!
